@@ -5,7 +5,9 @@ app.use(express.json());
 require('dotenv').config();
 const PORT = process.env.PORT;
 
-
+app.get('/', (request, response) => {
+    response.send("Hello?");
+});
 
 
 
