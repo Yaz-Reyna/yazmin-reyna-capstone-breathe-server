@@ -8,14 +8,11 @@ const PORT = process.env.PORT || 5050;
 
 const quotesRoute = require('./routes/quotesRoute');
 
-// app.get('/', (request, response) => {
-//     response.send("Hello?");
-// });
-
 app.use('/', quotesRoute);
 
 
-
+const cors = require('cors');
+app.use(cors());
 
 
 
