@@ -9,16 +9,18 @@ const PORT = process.env.PORT || 5050;
 const quotesRoute = require('./routes/quotesRoute');
 const commentsRoute = require('./routes/commentsRoute');
 
+const cors = require('cors');
+app.use(cors());
+
 app.use('/', quotesRoute);
 app.use('/', commentsRoute);
 
 
-const cors = require('cors');
-app.use(cors());
+
 
 
 
 
 app.listen(PORT, () => {
-    console.log(`is ${PORT} working?`);
+    console.log(`is ${PORT} working? Yep!`);
 });
