@@ -9,15 +9,21 @@ exports.seed = async function(knex) {
     {
     id: 1, 
     name: 'Jane Brown', 
-    comment: "This page is a great way to have take a short break!",
+    comment: "I absolutely love the breathing exercises on this page. They really help me to relax and calm my mind.",
     date: '2022-11-15'
     },
     {
     id: 2, 
     name: 'Juan Martinez', 
-    comment: "I love getting a daily quote and joke!!!",
+    comment: "The jokes on this page always make me smile, even on my most stressful days. Keep up the good work!",
     date: '2022-12-10'
-    }
+    },
+    {
+      id: 3, 
+      name: 'Lucy Doe', 
+      comment: "TThe words of encouragement on this page always give me the boost I need to start my day off on the right foot. Thank you for creating this page.",
+      date: '2022-12-10'
+      }
     
   ]);
 };
